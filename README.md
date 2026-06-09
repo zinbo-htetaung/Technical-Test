@@ -8,8 +8,7 @@ A shift cipher encoder/decoder built with Java Swing.
 - The first character of the encoded string is always the offset
 
 ## How to run
-javac Encoder.java
-java Encoder
+javac Encoder.java | java Encoder.java
 
 ## Features
 - Encode / Decode with any offset character
