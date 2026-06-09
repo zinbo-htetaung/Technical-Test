@@ -1,17 +1,29 @@
-# Encoder / Decoder
+# 🔐 Encoder / Decoder
 
-A shift cipher encoder/decoder built with Java Swing.
+A shift cipher encoder/decoder built with **Java Swing**, demonstrating OOP principles with a modern dark/light mode UI.
 
-## How it works
-- Choose any character from the reference table as an offset
-- Each character in the plaintext is shifted by the offset index
-- The first character of the encoded string is always the offset
+## How to Run
 
-## How to run
-javac Encoder.java | java Encoder.java
+```bash
+javac Encoder.java
+java Encoder
+```
 
 ## Features
-- Encode / Decode with any offset character
-- Dark / Light mode
-- Press Enter to submit
+- Encode text using any offset character
+- Decode encoded strings automatically
+- Dark / Light mode (auto-detects system preference)
+- Press Enter or click to submit
 - Inline error validation
+- Fully resizable window
+
+## OOP Concepts
+| Concept | Where |
+|---|---|
+| Encapsulation | `CipherEngine` (private reference table), `ThemeManager` (private isDark) |
+| Abstraction | `BaseForm` abstract base class |
+| Inheritance | `EncodeForm` and `DecodeForm` extend `BaseForm` |
+| Polymorphism | Both forms override `handleSubmit()` with different behaviour |
+
+## Author
+Zin Bo Htet Aung
